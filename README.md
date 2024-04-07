@@ -5,10 +5,8 @@ Tasks:
     Denim:
     File IO
     Structures
-
     Hope: 
     add, delete, update
-
     Maksym:
     search
     display single, all, range
