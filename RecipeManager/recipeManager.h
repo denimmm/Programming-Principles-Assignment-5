@@ -9,7 +9,7 @@ typedef struct ingredient {
 	char text[INGREDIENTLENGTH];
 	struct ingredient* next;
 
-}INGREDIENT, PINGREDIENT;
+}INGREDIENT, *PINGREDIENT;
 
 typedef struct instruction {
 	char text[INSTRUCTIONLENGTH];
@@ -24,3 +24,9 @@ typedef struct recipe {
 	struct recipe* next;
 
 } RECIPE, *PRECIPE;
+
+
+
+PINGREDIENT createIngredient(char text[INGREDIENTLENGTH], PINGREDIENT prevIngredient);
+PINSTRUCTION createInstruction(char text[INSTRUCTIONLENGTH], PINSTRUCTION prevInstruction);
+PRECIPE createRecipe(char name[NAMELENGTH], PINGREDIENT Ingredients, PINSTRUCTION Instructions, PRECIPE prevRecipe);

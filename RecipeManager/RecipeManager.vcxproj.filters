@@ -21,5 +21,8 @@
     <ClCompile Include="recipeManager.h">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="recipeManager.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
